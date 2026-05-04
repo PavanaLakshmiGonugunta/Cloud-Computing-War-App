@@ -1,6 +1,22 @@
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="4.0">
+
     <display-name>S3 Upload App</display-name>
+
+    <!-- ✅ Welcome page -->
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+
+    <!-- ✅ Servlet -->
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>com.app.UploadServlet</servlet-class>
+    </servlet>
+
+    <!-- ✅ Mapping -->
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
 </web-app>
